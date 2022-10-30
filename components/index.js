@@ -5,7 +5,7 @@ import pic3 from "../public/3.jpg";
 import pic4 from "../public/4.jpg";
 import pic5 from "../public/5.jpg";
 import pic6 from "../public/6.jpg";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Dice = () => {
   const pic = [
@@ -53,15 +53,14 @@ const Dice = () => {
   return (
     <div>
       <button onClick={() => randFunc()}>CLICK</button>
-
       <div>
         <img src={randomPic.img.src} /> <img src={randomPic2.img.src} />{" "}
       </div>
-
       <div>
         first dice:{randomPic.count} <br />
         second dice:{randomPic2.count}
       </div>
+      {/*<FontAwesomeIcon icon="fa-sharp fa-solid fa-magnifying-glass" />{" "}*/}
     </div>
   );
 };
