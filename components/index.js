@@ -1,11 +1,4 @@
 import React, { useEffect, useState } from "react";
-import pic1 from "../public/1.jpg";
-import pic2 from "../public/2.jpg";
-import pic3 from "../public/3.jpg";
-import pic4 from "../public/4.jpg";
-import pic5 from "../public/5.jpg";
-import pic6 from "../public/6.jpg";
-import ReactDice from "react-dice-roller";
 import Dicee from "react-dice-roll";
 import styles from "./dice.module.css";
 
@@ -15,18 +8,27 @@ const Dice = () => {
 
   return (
     <div className={styles.diceContainer}>
-      <div className={styles.dice}>
+      <div className={styles.diceAll}>
+        <div className={styles.diceItem}>
+          <Dicee
+            size={150}
+            rollingTime={2000}
+            onRoll={(value) => setRandomPic(value)}
+          />
+        </div>
+
         <Dicee
           size={150}
-          rollingTime={3000}
-          onRoll={(value) => setRandomPic(value)}
+          rollingTime={2000}
+          onRoll={(value) => setRandomPic2(value)}
         />
-
-        <Dicee size={150} onRoll={(value) => setRandomPic2(value)} />
       </div>
+      <br />
+      <br />
       <div>
-        dice first : {randomPic}
-        dice second: {randomPic2}
+        first dice: {randomPic}
+        <br />
+        second dice: {randomPic2}
       </div>
     </div>
   );
