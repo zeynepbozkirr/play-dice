@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Dicee from "react-dice-roll";
 import styles from "./dice.module.css";
 
