@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import Dicee from "react-dice-roll";
 import styles from "./dice.module.css";
+import { Head } from "next/document";
 
 const Dice = () => {
-  const [randomPic, setRandomPic] = useState(null);
-  const [randomPic2, setRandomPic2] = useState(null);
+  const [randomPic, setRandomPic] = useState(6);
+  const [randomPic2, setRandomPic2] = useState(6);
 
   return (
     <div className={styles.diceContainer}>
@@ -26,9 +27,9 @@ const Dice = () => {
       <br />
       <br />
       <div>
-        first dice: {randomPic}
+        FIRST DICE: <b> {randomPic}</b>
         <br />
-        second dice: {randomPic2}
+        SECOND DICE: <b> {randomPic2}</b>
       </div>
     </div>
   );
