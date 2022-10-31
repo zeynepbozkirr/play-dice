@@ -1,0 +1,14 @@
+.diceContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+}
+.dice{
+    display: flex;
+    justify-content: space-between;
+
+
+
+}

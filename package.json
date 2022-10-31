@@ -14,13 +14,29 @@
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "next": "13.0.0",
+    "pkg": "^5.8.0",
     "react": "18.2.0",
     "react-dice-complete": "^1.2.1",
+    "react-dice-roll": "^1.2.2",
+    "react-dice-roller": "^1.0.5",
     "react-dom": "18.2.0",
     "react-spring": "^9.5.5"
   },
   "devDependencies": {
     "eslint": "8.26.0",
     "eslint-config-next": "13.0.0"
-  }
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "next.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeynepbozkirr/play-dice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zeynepbozkirr/play-dice/issues"
+  },
+  "homepage": "https://github.com/zeynepbozkirr/play-dice#readme"
 }
